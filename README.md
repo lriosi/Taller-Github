@@ -35,8 +35,8 @@ Podemos identificar siete actividades principales:
 
 ---
 ## Motivación detras de Michelangelo
-Antes del desarrollo de Micheangelo, los científicos de datos de Uber utilizaban múltiples herramientas para construir modelos predictivos. No obstante, llevar estos modelos a producción representaba un desafío, pues se requería una solución independiente por proyecto. El desarrollo de esta aplicación permitió centralizar procesos.
----
+#### Antes del desarrollo de Micheangelo, los científicos de datos de Uber utilizaban múltiples herramientas para construir modelos predictivos. No obstante, llevar estos modelos a producción representaba un desafío, pues se requería una solución independiente por proyecto. El desarrollo de esta aplicación permitió centralizar procesos.
+
 ## Arquitectura y Componentes Clave
 
 El sistema gestiona las 6 etapas del ciclo de vida de Machine Learning:
