@@ -25,26 +25,25 @@
 
 El sistema gestiona las 6 etapas del ciclo de vida de Machine Learning:
 
-<h2> 1. **Gestión de Datos y Feature Store:** </h2>
+ 1. **Gestión de Datos y Feature Store:**
    * Organización y control de las características para evitar repetir código.
    * Procesa los datos por lotes usando Apache Spark y en tiempo real con Apache Flink y Samza, almacenando la información en Apache Cassandra.
-     
+<br>
   <div align="center">
   <img width="2160" height="1230" alt="srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9jMTZjYjdiYy03ZGQzLTU5M2ItYjdmZC1iNTlhZjM4YzczYTAuanBn" src="https://github.com/user-attachments/assets/1bc4015a-51b3-4e9d-b07c-9177ba68cc2c" />  
     Figura 1: Las canalizaciones de preparación de datos envían los datos a las tablas de Feature Store y a los repositorios de datos de entrenamiento.
   </div>
-
-
-<h2> 2. **Entrenamiento Distribuido:**</h2>
+<br>
+ 2. **Entrenamiento Distribuido:**
    * Organización de los procesos de trabajo en clústeres distribuidos usando Apache Spark MLlib y Horovod para el aprendizaje profundo.
    * División eficiente de grandes cantidades de datos geoespaciales y transaccionales.
      
-    <div align="center">
-    <img width="2160" height="1237" alt="srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy8yMTk2YWFjYy0zNTQ5LTU1ZTAtYTg0OS1mZWRjODQ5ZDg3ZWIuanBn" src="https://github.com/user-attachments/assets/3bd37ae5-f971-4872-84fe-001cc050308d" />
+   <div align="center">
+   <img width="2160" height="1237" alt="srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy8yMTk2YWFjYy0zNTQ5LTU1ZTAtYTg0OS1mZWRjODQ5ZDg3ZWIuanBn" src="https://github.com/user-attachments/assets/3bd37ae5-f971-4872-84fe-001cc050308d" />
     Figura 2: Los trabajos de entrenamiento de modelos utilizan los conjuntos de datos del repositorio de datos de entrenamiento y de Feature Store para entrenar los modelos y luego enviarlos al repositorio de modelos.
-    </div>
-
-<h2> 3. **Evaluación de Modelos:** </h2>
+   </div>
+   
+3. **Evaluación de Modelos:**
    * Comparación de modelos candidatos frente a los ya existentes.
    * Generación automática de curvas ROC, matrices de confusión, importancia de variables y métricas de error.
 
@@ -53,14 +52,14 @@ El sistema gestiona las 6 etapas del ciclo de vida de Machine Learning:
     Figura 3: Las características, su impacto en el modelo y sus interacciones se pueden explorar a través de un informe de características.
     </div>
     
-<h2> 5. **Despliegue de Modelos:** </h2>
+ 5. **Despliegue de Modelos:**
    * Empaquetado estándar de los modelos y sus procesos de transformación para pasarlos directamente a los clústeres de inferencia sin tener que volver a escribir el código.
     
-<h2> 7.  **Inferencia y Predicción:** </h2>
+ 7.  **Inferencia y Predicción:** 
    * **Inferencia Offline:** Tareas programadas en Apache Spark para realizar muchas predicciones cuando no es necesario obtener resultados rápidamente.
    * **Inferencia Online:** Nodos de servicio de predicción de baja latencia con interfaces RPC.
      
-<h2> 6. **Monitoreo de Modelos:** </h2>
+ 6. **Monitoreo de Modelos:** 
    * Seguimiento del rendimiento del modelo en producción.
    * Detección de cambios en los datos y pérdida de precisión.
    * Reentrenamiento y actualización cuando el desempeño disminuye.
@@ -74,8 +73,6 @@ Uno de los casos donde más podemos notar la implementación de Michelangelo es 
 </div>
 
 El modelo utiliza regresión mediante mediante árboles de decisión potenciados por gradiente para estimar el tiempo de entrega. Este módelo permite proporcionar los tiempos estimados.
-
-**Ciencia de datos en el proyecto**
 
 
 
