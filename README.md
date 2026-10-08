@@ -21,7 +21,7 @@ La ciencia de datos desempeña un papel fundamental en Michelangelo, ya que es l
 Podemos identificar siete actividades principales:
 1. **Identificar el problema**: Determinar qué se necesita predecir y cuáles son las variables relevantes.
 2. **Preparación de los datos**: Seleccionar y transformar los datos de distintas fuentes. También conocido como limpieza de datos.
-3. **Ingeniería de características**: Dise4ñar las variables que serán utilizadas en los modelos y almacenarlas.
+3. **Ingeniería de características**: Diseñar las variables que serán utilizadas en los modelos y almacenarlas.
 4. **Entrenamiento**: Seleccionar algoritmos, ajustar los parámetros y llevar a cabo experimentos.
 5. **Evaluación**: Analizar méttricas de desempeño y comparar modelos para escoger al que obtenga resultados más precisos y exactos.
 6. **Implementación**: Trabajar junto a ingenieros de software y desarrolladores para desplegar los modelos en producción.
