@@ -20,6 +20,8 @@
 * **Mike Del Balso** - Product Manager & Data Product Lead en Uber ML Platform.
 
 ---
+## Motivación detras de Michelangelo
+Antes del desarrollo de Micheangelo, los científicos de datos de Uber utilizaban múltiples herramientas para construir modelos predictivos. No obstante, llevar estos modelos a producción representaba un desafío, pues se requería una solución independiente por proyecto. El desarrollo de esta aplicación permitió centralizar procesos.
 
 ## Arquitectura y Componentes Clave
 
@@ -52,10 +54,10 @@ El sistema gestiona las 6 etapas del ciclo de vida de Machine Learning:
     Figura 3: Las características, su impacto en el modelo y sus interacciones se pueden explorar a través de un informe de características.
     </div>
     
- 5. **Despliegue de Modelos:**
+ 4. **Despliegue de Modelos:**
    * Empaquetado estándar de los modelos y sus procesos de transformación para pasarlos directamente a los clústeres de inferencia sin tener que volver a escribir el código.
     
- 7.  **Inferencia y Predicción:** 
+ 5.  **Inferencia y Predicción:** 
    * **Inferencia Offline:** Tareas programadas en Apache Spark para realizar muchas predicciones cuando no es necesario obtener resultados rápidamente.
    * **Inferencia Online:** Nodos de servicio de predicción de baja latencia con interfaces RPC.
      
@@ -64,16 +66,15 @@ El sistema gestiona las 6 etapas del ciclo de vida de Machine Learning:
    * Detección de cambios en los datos y pérdida de precisión.
    * Reentrenamiento y actualización cuando el desempeño disminuye.
 
-**Caso de uso: Uber Eats**
+## Caso de uso: Uber Eats
 Uno de los casos donde más podemos notar la implementación de Michelangelo es Uber Eats, donde, como se ha mencionado anteriormente, se utilizan modelos de machine learning para estimar el tiempo de preparación y entrega de los pedidos. Esto lo logra gracias a que el sistema realiza las respectivas predicciones antes que el usuario confirme su pedido y las actualiza durante el transcurso del pedido. Para llevar este proceso a cabo, se utilizan tres tipos de información: los datos de la solicitud, los datos históricos y los datos en un tiempo cercano.
  
  <div align="center">
 <img width="2160" height="1451" alt="srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy80ZDgwMzJhMC04ZTI4LTVlZTgtOTg3Ni0xZjU3MTUzMDQ2YmMuanBn" src="https://github.com/user-attachments/assets/bcbe8090-610e-4c3a-9715-95ccead81824" />
-   Figura 5: La aplicación UberEATS incluye una función de estimación del tiempo de entrega basada en modelos de aprendizaje automático desarrollados con Michelangelo.
+   Figura 4: La aplicación UberEATS incluye una función de estimación del tiempo de entrega basada en modelos de aprendizaje automático desarrollados con Michelangelo.
 </div>
 
-El modelo utiliza regresión mediante mediante árboles de decisión potenciados por gradiente para estimar el tiempo de entrega. Este módelo permite proporcionar los tiempos estimados.
-
+El modelo utiliza regresión mediante árboles de decisión potenciados por gradiente para estimar el tiempo de entrega. Este módelo permite proporcionar los tiempos estimados.
 
 
 **Referencia**
