@@ -15,6 +15,20 @@
 
 ---
 
+## Características de ciencia de datos en el proyecto
+La ciencia de datos desempeña un papel fundamental en Michelangelo, ya que es la rama encargada de desarrollar y evaluar los modelos de aprendizaje automático que permiten resolver los problemas de negocio.
+
+Podemos identificar siete actividades principales:
+1. **Identificar el problema**: Determinar qué se necesita predecir y cuáles son las variables relevantes.
+2. **Preparación de los datos**: Seleccionar y transformar los datos de distintas fuentes. También conocido como limpieza de datos.
+3. **Ingeniería de características**: Dise4ñar las variables que serán utilizadas en los modelos y almacenarlas.
+4. **Entrenamiento**: Seleccionar algoritmos, ajustar los parámetros y llevar a cabo experimentos.
+5. **Evaluación**: Analizar méttricas de desempeño y comparar modelos para escoger al que obtenga resultados más precisos y exactos.
+6. **Implementación**: Trabajar junto a ingenieros de software y desarrolladores para desplegar los modelos en producción.
+7. **Supervisión**: Monitorear la precisión de las predicciones y realizar actualizaciones cuando el rendimiento disminuya.
+   <br>
+---
+
 ## Líderes del Proyecto
 * **Jeremy Hermann** - Engineering Manager & Head of Machine Learning Platform en Uber.
 * **Mike Del Balso** - Product Manager & Data Product Lead en Uber ML Platform.
@@ -22,7 +36,7 @@
 ---
 ## Motivación detras de Michelangelo
 Antes del desarrollo de Micheangelo, los científicos de datos de Uber utilizaban múltiples herramientas para construir modelos predictivos. No obstante, llevar estos modelos a producción representaba un desafío, pues se requería una solución independiente por proyecto. El desarrollo de esta aplicación permitió centralizar procesos.
-
+---
 ## Arquitectura y Componentes Clave
 
 El sistema gestiona las 6 etapas del ciclo de vida de Machine Learning:
@@ -65,7 +79,7 @@ El sistema gestiona las 6 etapas del ciclo de vida de Machine Learning:
    * Seguimiento del rendimiento del modelo en producción.
    * Detección de cambios en los datos y pérdida de precisión.
    * Reentrenamiento y actualización cuando el desempeño disminuye.
-
+---
 ## Caso de uso: Uber Eats
 Uno de los casos donde más podemos notar la implementación de Michelangelo es Uber Eats, donde, como se ha mencionado anteriormente, se utilizan modelos de machine learning para estimar el tiempo de preparación y entrega de los pedidos. Esto lo logra gracias a que el sistema realiza las respectivas predicciones antes que el usuario confirme su pedido y las actualiza durante el transcurso del pedido. Para llevar este proceso a cabo, se utilizan tres tipos de información: los datos de la solicitud, los datos históricos y los datos en un tiempo cercano.
  
@@ -76,7 +90,7 @@ Uno de los casos donde más podemos notar la implementación de Michelangelo es 
 
 El modelo utiliza regresión mediante árboles de decisión potenciados por gradiente para estimar el tiempo de entrega. Este módelo permite proporcionar los tiempos estimados.
 
-
+---
 **Referencia**
   * https://www.uber.com/us/en/blog/michelangelo-machine-learning-platform/
   
